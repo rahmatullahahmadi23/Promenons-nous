@@ -65,8 +65,6 @@ class PostsController extends Controller
             $fileNameToStore = 'noimage.jpg';
         }
 
-
-
         $post = new Post();
         $post->title = $request->input('title');
         $post->auteur = $request->input('auteur');
