@@ -29,13 +29,13 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></td>
-                    <td><h1>{{$post->title}}</h1>
+                    <td style="width:50%"><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></td>
+                    <td style="width:50%"><h1>{{$post->title}}</h1>
                         <h6>Publié le {{$post->created_at}} par {{$post->auteur}}</h6>
                     <h4>Ville: {{$post->city}} ({{$post->country}})</h4>
                     <h4>Code postale: {{$post->postalCode}}</h4>
                     <h4>Départ de :{{$post->departure}} - Arrivée à :{{$post->arrive}}</h4>
-                    <h4>Description: {{$post->body}}</h4>
+                    <h4>Description:</h4><p> {{$post->body}}</p>
                     </td>
                     <td></td>
                   </tr>

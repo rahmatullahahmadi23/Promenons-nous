@@ -159,6 +159,17 @@
                 text-transform: uppercase;
             }
 
+            .table p{
+                color: white;
+                margin-bottom: .5rem;
+                font-family: inherit;
+                line-height: 1.2;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+            }
+
             .btn-primary {
                 color: darkseagreen;
                 background-color: white;
@@ -187,3 +198,16 @@
                 -webkit-text-decoration-skip: objects;
             }
 
+            .page-item.active {
+                z-index: 1;
+                color: #fff;
+                background-color: darkseagreen;
+                border-color: darkseagreen;
+            }
+
+            .page-link {
+                z-index: 1;
+                color: #fff;
+                background-color: darkseagreen;
+                border-color: darkseagreen;
+            }

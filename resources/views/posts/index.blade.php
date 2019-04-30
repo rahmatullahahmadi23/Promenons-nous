@@ -34,8 +34,8 @@
         @foreach($posts as $post)
         <tbody>
           <tr>
-            <td><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></td>
-            <td><h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
+            <td style="width:50%"><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></td>
+            <td style="width:50%"><h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
                 <h6>Publié par {{$post->auteur}} le {{$post->created_at}}</h6>
                 <h4>Ville: {{$post->city}}</h4>
                 <h4>Pays: {{$post->country}}</h4>
@@ -43,11 +43,11 @@
           </tr>
         </tbody>
         @endforeach
-        {{$posts->links()}}
     @else
         <p>No fille found</p>
     @endif
       </table>
+      {{$posts->links()}}
 
 
 
