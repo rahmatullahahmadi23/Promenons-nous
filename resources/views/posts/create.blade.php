@@ -1,5 +1,7 @@
+<!-- layout -->
 @extends('layouts.app')
 
+<!-- content -->
 @section('content')
     <h1>New promenade</h1>
     {{ Form::open(['action' => 'PostsController@store', 'method' => 'Post', 'enctype' => 'multipart/form-data']) }}

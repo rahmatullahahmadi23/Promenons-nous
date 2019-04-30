@@ -1,5 +1,7 @@
+<!-- layout -->
 @extends('layouts.app')
 
+<!-- content -->
 @section('content')
 <div class="container">
     <a href="/posts" class="btn btn-primary">Go back</a>
