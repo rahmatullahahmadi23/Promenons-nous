@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    Walk in the Street
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    <li><a href="/posts">Promenons-nous</a></li>
+                    <li><a href="/posts">Liste des promenades</a></li>
 
                     </ul>
 
@@ -45,7 +45,7 @@
 {{--                         <li class="btn btn-info"><a href="/posts/create">Add a post</a></li>
  --}}                        <div class="col-2 bouton-section">
                             <a href="/posts/create">
-                              <button class="btn"><i class="fa fa-plus"></i> ajouter</button>
+                              <button class="btn"><i class="fa fa-plus"></i>+ Ajouter une promenade</button>
                             </a>
                           </div>
                     </ul>

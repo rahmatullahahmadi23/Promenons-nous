@@ -1,6 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Promenons-nous dans les bois</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+        <!-- Style -->
+        <link href="{{URL::asset('css/style.css')}}" rel="stylesheet" />
+
+    </head>
+
     <h1>Edit Post</h1>
     {{ Form::open(['action' => ['PostsController@update', $post->id], 'method' => 'Post', 'enctype' => 'multipart/form-data']) }}
         <div class="form-group">
@@ -32,6 +47,10 @@
             {{form::text('arrive', $post->arrive,['class'=> 'form-control','placeholder'=> ''])}}
         </div>
         <div class="form-group">
+            {{form::label('body', 'Body')}}
+            {{form::textarea('body', $post->body,[ 'class'=> 'form-control','placeholder'=> ''])}}
+        </div>
+        <div class="form-group">
             {{form::file('cover_image')}}
         </div>
         {{form::hidden('_method', 'PUT')}}
@@ -40,3 +59,4 @@
     {{ Form::close()}}
 
 @endsection
+    </div>

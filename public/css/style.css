@@ -1,0 +1,189 @@
+
+            html, body {
+                background-color:darkseagreen;
+                color:ghostwhite;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .top-right {
+                position: absolute;
+                right: 10px;
+                top: 18px;
+            }
+
+            .content {
+                text-align: center;
+            }
+
+            .title {
+                font-size: 84px;
+                color: white;
+                text-transform: uppercase;
+            }
+
+            .links > a {
+                color: white;
+                padding: 0 25px;
+                font-size: 25px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .footer > p {
+                color: white;
+                padding: 0 25px;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .m-b-md {
+                margin-bottom: 30px;
+            }
+
+            .navbar-laravel {
+                background-color: white;
+                color: darkseagreen;
+                box-shadow: 0 2px 4px rgba(0,0,0,.04);
+            }
+
+            .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+                color: darkseagreen;
+                padding: 0 0px;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .navbar-laravel a {
+                color: darkseagreen;
+                padding: 0 0px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-decoration-skip: objects;
+            }
+
+            .navbar-laravel a:hover {
+                color: darkseagreen;
+                padding: 0 0px;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-decoration-skip: objects;
+            }
+
+            .navbar-laravel button {
+                color: white;
+                background-color: darkseagreen;
+                padding: 0 0px;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 10px 20px;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-decoration-skip: objects;
+            }
+
+            a {
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: transparent;
+                -webkit-text-decoration-skip: objects;
+            }
+
+            a:hover {
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: transparent;
+                -webkit-text-decoration-skip: objects;
+            }
+
+            .table .thead-dark th {
+                color: darkseagreen;
+                background-color: white;
+                border-color: white;
+            }
+
+            .table h4{
+                color: white;
+                margin-bottom: .5rem;
+                font-family: inherit;
+                line-height: 1.2;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .table h6{
+                color: white;
+                margin-bottom: .5rem;
+                font-family: inherit;
+                line-height: 1.2;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            .btn-primary {
+                color: darkseagreen;
+                background-color: white;
+                border-color: white;
+                padding: 0 0px;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 10px 20px;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-decoration-skip: objects;
+                text-transform: uppercase;
+
+            .btn-danger {
+                color: white;
+                background-color: #e3342f;
+                border-color: #e3342f;
+                padding: 0 0px;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 10px 20px;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-decoration-skip: objects;
+            }
+

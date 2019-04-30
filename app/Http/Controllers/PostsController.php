@@ -46,6 +46,7 @@ class PostsController extends Controller
             'postalCode' => 'required',
             'departure' => 'required',
             'arrive' => 'required',
+            'body' => 'required',
             'cover_image' => 'image|nullable'
         ]);
 
@@ -73,6 +74,7 @@ class PostsController extends Controller
         $post->postalCode = $request->input('postalCode');
         $post->departure = $request->input('departure');
         $post->arrive = $request->input('arrive');
+        $post->body = $request->input('body');
         $post->cover_image = $fileNameToStore;
         $post->save();
 
@@ -122,7 +124,8 @@ class PostsController extends Controller
             'city'  => 'required',
             'postalCode'  => 'required',
             'departure'  => 'required',
-            'arrive'  => 'required'
+            'arrive'  => 'required',
+            'body' => 'required'
         ]);
 
          // Handle File Upload
@@ -147,6 +150,7 @@ class PostsController extends Controller
         $post->postalCode = $request->input('postalCode');
         $post->departure = $request->input('departure');
         $post->arrive = $request->input('arrive');
+        $post->body = $request->input('body');
         if($request->hasFile('cover_image')){
             $post->cover_image = $fileNameToStore;
         }

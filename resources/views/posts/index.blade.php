@@ -1,27 +1,55 @@
 @extends('layouts.app')
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 @section('content')
+
 <div class="container">
 
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <title>Promenons-nous dans les bois</title>
+
+                <!-- Fonts -->
+                <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+                <!-- Style -->
+                <link href="{{URL::asset('css/style.css')}}" rel="stylesheet" />
+
+            </head>
+
 <h1>Promenons-nous</h1>
-    @if(count($posts) > 0)
+
+
+<table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Promenade</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        @if(count($posts) > 0)
         @foreach($posts as $post)
-        <div class="well">
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
-                </div>
-                <div class="col-md-8 col-sm-8">
-                    <h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-                    <small>Written on {{$post->created_at}} </small>
-                </div>
-            </div>
-        </div>
+        <tbody>
+          <tr>
+            <td><img style="width:100%" src="/storage/cover_images/{{$post->cover_image}}"></td>
+            <td><h3><a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
+                <h6>Publié par {{$post->auteur}} le {{$post->created_at}}</h6>
+                <h4>Ville: {{$post->city}}</h4>
+                <h4>Pays: {{$post->country}}</h4>
+                </td>
+          </tr>
+        </tbody>
         @endforeach
         {{$posts->links()}}
     @else
         <p>No fille found</p>
     @endif
+      </table>
+
+
+
 @endsection
 
 
