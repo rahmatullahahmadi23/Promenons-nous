@@ -1,5 +1,7 @@
+<!-- layout -->
 @extends('layouts.app')
 
+<!-- content -->
 @section('content')
 
 <head>
