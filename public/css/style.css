@@ -4,7 +4,7 @@
                 color:ghostwhite;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
-                height: 100vh;
+                height: 100%;
                 margin: 0;
             }
 
@@ -31,6 +31,14 @@
             .content {
                 text-align: center;
             }
+
+            .bg {
+                background-image: url("https://media.gadventures.com/media-server/cache/99/82/9982d01209bf9a7833d2ca934b50bb5e.jpg");
+                height: 100%;
+                background-position: center;
+                background-repeat: repeat;
+                background-size: cover;
+              }
 
             .title {
                 font-size: 84px;
@@ -211,3 +219,5 @@
                 background-color: darkseagreen;
                 border-color: darkseagreen;
             }
+
+

@@ -36,14 +36,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    <li><a href="/posts">Liste des promenades</a></li>
-
+                        <li><a href="/about">&nbsp;Team Last One &nbsp;</a></li>
+                        <li><a href="/posts"> &nbsp; Liste des promenades&nbsp;</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-{{--                         <li class="btn btn-info"><a href="/posts/create">Add a post</a></li>
- --}}                        <div class="col-2 bouton-section">
+                            <div class="col-2 bouton-section">
                             <a href="/posts/create">
                               <button class="btn"><i class="fa fa-plus"></i>+ Ajouter une promenade</button>
                             </a>
